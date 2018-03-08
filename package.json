@@ -1,0 +1,24 @@
+{
+  "name": "quodl-site",
+  "version": "2.0.0",
+  "description": "Minimal Apostrophe Boilerplate",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "P'unk Avenue",
+  "license": "MIT",
+  "dependencies": {
+    "apostrophe": "^2.0.0",
+    "apostrophe-blog": "^2.1.1",
+    "apostrophe-events": "^2.1.0",
+    "apostrophe-pieces-submit-widgets": "^2.0.2",
+    "async": "^2.6.0",
+    "html2plaintext": "^2.0.1",
+    "lodash": "^4.17.4"
+  }
+}
