@@ -1,11 +1,11 @@
 {% extends "layout.html" %}
 
 {% block main %}
-<section class="bg-icons pv5 center tc">
-  <h3 class="f2 f1-ns w-80 w-100-ns quodl-blue center">
+<section class="be-bg-grey pv5 center tc">
+  <h3 class="f2 f1-ns w-80 w-100-ns be-red center">
     {{ apos.singleton(data.page, 'pageHeader', 'apostrophe-rich-text') }}
   </h3>
-  <div class="w-80 w-60-ns center lh-copy f4 f3-ns">
+  <div class="w-80 w-60-ns center lh-copy f4 f3-ns work-sans">
       {{ apos.singleton(data.page, 'pageSubheader', 'apostrophe-rich-text') }}
   </div>
 
@@ -48,15 +48,16 @@
         }
       }
     }) }}
-    <h3 class="f3 quodl-blue tc">
+    <h3 class="f3 be-red tc">
       {{ apos.singleton(data.page, 'aboutButtonHeader', 'apostrophe-rich-text') }}
     </h3>
 
-    <div class="tc pb4">
-      <a href="/pricing" class="white quodl-bg-blue no-underline f5 br-pill pv2 ph3">
-        Create FREE account
+    <div class="tc">
+      <a href="https://www.bestevidence.info/" class="no-underline white">
+        <div class="dib br-pill tc w5 pv3 v-top be-bg-red be-white mr3 mb3">
+          {{ apos.singleton(data.page, 'createAccountButton', 'apostrophe-rich-text', {}) }}
+        </div>
       </a>
-    </div>
   </section>
 </section>
 {% endblock %}
