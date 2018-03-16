@@ -2,15 +2,15 @@
 
 {% block main %}
 <section class="be-bg-grey pv5 center tc">
-  <h3 class="f2 f1-ns w-80 w-100-ns be-red center">
+  <h3 class="f2 f1-ns normal fw-1-ns w-90 w-80-ns be-red center">
     {{ apos.singleton(data.page, 'pageHeader', 'apostrophe-rich-text') }}
   </h3>
-  <div class="w-80 w-60-ns center lh-copy f4 f3-ns work-sans">
+  <div class="w-80 w-50-ns center f4 f3-ns">
       {{ apos.singleton(data.page, 'pageSubheader', 'apostrophe-rich-text') }}
   </div>
 
   <section class="bg-white mt5 tl br3 shadow-2 w-90 w-80-ns pv3 ph4 ph5-ns center lh-copy">
-    <h3 class="f3">
+    <h3 class="f3-ns normal">
       {{ apos.singleton(data.page, 'aboutTextHeader', 'apostrophe-rich-text') }}
     </h3>
     {{ apos.area(data.page, 'body', {
@@ -48,7 +48,7 @@
         }
       }
     }) }}
-    <h3 class="f3 be-red tc">
+    <h3 class="f3 be-red tc normal">
       {{ apos.singleton(data.page, 'aboutButtonHeader', 'apostrophe-rich-text') }}
     </h3>
 

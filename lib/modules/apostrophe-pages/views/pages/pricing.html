@@ -1,11 +1,11 @@
 {% extends "layout.html" %}
 
 {% block main %}
-  <section class="img-banner pt5 pb6 pt6-ns h-30 tc">
-    <h1 class="be-white f2 f1-ns w-80 w-100-ns b-ns center">
+  <section class="img-banner pt5 pv6 pb6 pt6-ns h-30 tc">
+    <h1 class="be-white f2 ma0 f1-ns w-90 w-80-ns b-ns center">
       {{ apos.singleton(data.page, 'pageHeader', 'apostrophe-rich-text') }}
     </h1>
-    <h3 class="f4 f3-ns be-white lh-copy-ns w-80 w-100-ns normal center">
+    <h3 class="f4 fw1 ma0 f3-ns be-white lh-copy-ns w-90 w-80-m w-30-ns normal center">
       {{ apos.singleton(data.page, 'pageSubHeader', 'apostrophe-rich-text') }}
     </h3>
   </section>
@@ -14,7 +14,7 @@
       <div class="f2 fw6 f1-ns mt0 be-red">
         {{ apos.singleton(data.page, 'joinHeader', 'apostrophe-rich-text') }}
       </div>
-      <div class="f4 f3-ns fw1 pb2 be-black">
+      <div class="f4 f3-ns fw3 pb2">
         {{ apos.singleton(data.page, 'joinText', 'apostrophe-rich-text') }}
       </div>
       <a href="/contact-us" class="no-underline white">
@@ -26,7 +26,7 @@
 
   <section class="pv4 pv5-ns be-bg-grey">
     <div class="be-bg-white br3 w-90 w-80-ns pt2 pa3-ns shadow-2 center tl ph5-ns">
-      <h4 class="tc f4 f3-ns fw1"><a name="contact"></a>
+      <h4 class="tc f4 f3-ns fw3"><a name="contact"></a>
         {{ apos.singleton(data.page, 'contactHeader', 'apostrophe-rich-text') }}
       </h4>
         {{ apos.singleton(data.page, 'contactForm', 'messages-submit') }}
