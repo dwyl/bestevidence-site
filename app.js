@@ -26,7 +26,7 @@ var apos = require("apostrophe")({
       // Always spell out the schema field names the user is allowed to edit.
       // You almost certainly don't want them to have control
       // of the "published" field, for instance
-      fields: ["title", "email", "subject", "details"]
+      fields: ["subject", "details", "title", "email"]
     },
     "apostrophe-attachments": {
       uploadfs: {

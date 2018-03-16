@@ -1,0 +1,5 @@
+
+Hi {{toName}}!
+
+You've just received a message from: {{clientName}} {{clientEmail}}
+The following was written: {{details}}
