@@ -2,106 +2,120 @@
 
 {% block main %}
   <section class="pv6 be-bg-red">
-    <h1 class="f2 f1-ns tc white w-site w-80 center">
+    <h1 class="fw1 f2 f1-ns tc white w-site w-90 w-80-ns center">
       {{ apos.singleton(data.page, 'pageHeader', 'apostrophe-rich-text', {}) }}
     </h1>
 
-    <h3 class="fw1 f4 tc white mw6-5 center lh-copy">
+    <h3 class="fw3 f3 tc white center w-80 w-50-ns lh-copy">
       {{ apos.singleton(data.page, 'pageSubTitle', 'apostrophe-rich-text', {}) }}
     </h3>
 
     <div class="tc">
       <a href="https://www.bestevidence.info/" class="no-underline red">
-        <div class="dib br-pill tc w5 pv3 v-top bg-white ba b--white red mr3 mb3">
+        <div class="be-button br-pill dib b--white bg-white be-red mr3-ns mb3 mb0-ns">
           {{ apos.singleton(data.page, 'accountButton', 'apostrophe-rich-text', {}) }}
         </div>
       </a>
 
       <a href="/about" class="no-underline white">
-        <div class="dib br-pill tc w5 pv3 v-top ba b--white white">
+        <div class="be-button br-pill dib b--white white">
           {{ apos.singleton(data.page, 'tourButton', 'apostrophe-rich-text', {}) }}
         </div>
       </a>
     </div>
   </section>
 
-  <section class="cb quodl-bg-light-gray">
-    <h2 class="tc fw1 f2 pt5 quodl-blue w-90 w-100-ns center tc">
+  <section class="">
+    <h1 class="fw1 f2 f1-ns tc w-site w-90 w-80-ns center pt5 be-red">
       {{ apos.singleton(data.page, 'blogSectionTitle', 'apostrophe-rich-text', {}) }}
-    </h2>
+    </h1>
 
-    <div class="">
-      {{ apos.singleton(data.page, 'howToPic1', 'apostrophe-images' ) }}
-      <p> {{ apos.singleton(data.page, 'howToText1', 'apostrophe-rich-text', {}) }} </p>
-    </div>
-    <div class="">
-      {{ apos.singleton(data.page, 'howToPic2', 'apostrophe-images' ) }}
-      {{ apos.singleton(data.page, 'howToText2', 'apostrophe-rich-text', {}) }}
-    </div>
-    <div class="">
-      {{ apos.singleton(data.page, 'howToPic3', 'apostrophe-images' ) }}
-      {{ apos.singleton(data.page, 'howToText3', 'apostrophe-rich-text', {}) }}
+    <div class="flex justify-around flex-wrap w-90 w-80-ns center">
+      <div class="mw5">
+        {{ apos.singleton(data.page, 'howToPic1', 'apostrophe-images' ) }}
+        <h3 class="tc fw1 f3 w-90 w-100-ns center be-red">{{ apos.singleton(data.page, 'howToHeader1', 'apostrophe-rich-text', {}) }}</h3>
+        <div class="f5">
+          {{ apos.singleton(data.page, 'howToText1', 'apostrophe-rich-text', {}) }}
+        </div>
+      </div>
+      <div class="mw5">
+        {{ apos.singleton(data.page, 'howToPic2', 'apostrophe-images' ) }}
+        <h3 class="tc fw1 f3 w-90 w-100-ns center be-red">{{ apos.singleton(data.page, 'howToHeader2', 'apostrophe-rich-text', {}) }}</h3>
+        <div class="f5">
+          {{ apos.singleton(data.page, 'howToText2', 'apostrophe-rich-text', {}) }}
+        </div>
+      </div>
+      <div class="mw5">
+        {{ apos.singleton(data.page, 'howToPic3', 'apostrophe-images' ) }}
+        <h3 class="tc fw1 f3 w-90 w-100-ns center be-red">{{ apos.singleton(data.page, 'howToHeader3', 'apostrophe-rich-text', {}) }}</h3>
+        <div class="f5">
+          {{ apos.singleton(data.page, 'howToText3', 'apostrophe-rich-text', {}) }}
+        </div>
+      </div>
     </div>
 
-    <div class="bb b--red">
-      {{ apos.singleton(data.page, 'learnMoreText', 'apostrophe-rich-text', {}) }}
+    <div class="w-90 w-80-ns center">
+      <h3 class="tc fw1 f2-5 pt4 w-90 w-100-ns center be-red"> {{ apos.singleton(data.page, 'learnMoreText', 'apostrophe-rich-text', {}) }} </h3>
       <a href="/how-to-use" class="no-underline quodl-blue">
-        <div class="dib br-pill tc w5 pv3 v-top ba-quodl-blue quodl-blue">
+        <div class="be-button br-pill center white be-bg-red mb5">
           {{ apos.singleton(data.page, 'howToUseBestEvidenceButton', 'apostrophe-rich-text', {}) }}
         </div>
       </a>
     </div>
 
-    {{ apos.singleton(data.page, 'whatUsersSay', 'apostrophe-rich-text', {}) }}
+    <div class="bb b--grey w-80 w-60-ns center bw2 o-30"></div>
 
-    <div class="">
-      {{ apos.singleton(data.page, 'whatUsersSayText1', 'apostrophe-rich-text', {}) }}
-      {{ apos.singleton(data.page, 'whatUsersSayAuthor1', 'apostrophe-rich-text', {}) }}
-      {{ apos.singleton(data.page, 'whatUsersSayJob1', 'apostrophe-rich-text', {}) }}
-    </div>
-    <div class="">
-      {{ apos.singleton(data.page, 'whatUsersSayText2', 'apostrophe-rich-text', {}) }}
-      {{ apos.singleton(data.page, 'whatUsersSayAuthor2', 'apostrophe-rich-text', {}) }}
-      {{ apos.singleton(data.page, 'whatUsersSayJob2', 'apostrophe-rich-text', {}) }}
-    </div>
-    <div class="">
-      {{ apos.singleton(data.page, 'whatUsersSayText3', 'apostrophe-rich-text', {}) }}
-      {{ apos.singleton(data.page, 'whatUsersSayAuthor3', 'apostrophe-rich-text', {}) }}
-      {{ apos.singleton(data.page, 'whatUsersSayJob3', 'apostrophe-rich-text', {}) }}
+    <h3 class="tc fw1 f2-5 pt5 pb4 w-90 w-100-ns center be-black"> {{ apos.singleton(data.page, 'whatUsersSay', 'apostrophe-rich-text', {}) }} </h3>
+
+    <div class="flex justify-around flex-wrap w90 w-80-ns center">
+      <div class="mw5 ph4">
+        {{ apos.singleton(data.page, 'whatUsersSayText1', 'apostrophe-rich-text', {}) }}
+        <div class="be-red remove-space">{{ apos.singleton(data.page, 'whatUsersSayAuthor1', 'apostrophe-rich-text', {}) }}</div>
+        <div class="be-red remove-space">{{ apos.singleton(data.page, 'whatUsersSayJob1', 'apostrophe-rich-text', {}) }}</div>
+      </div>
+      <div class="mw5 ph4">
+        {{ apos.singleton(data.page, 'whatUsersSayText2', 'apostrophe-rich-text', {}) }}
+        <div class="be-red remove-space">{{ apos.singleton(data.page, 'whatUsersSayAuthor2', 'apostrophe-rich-text', {}) }}</div>
+        <div class="be-red remove-space">{{ apos.singleton(data.page, 'whatUsersSayJob2', 'apostrophe-rich-text', {}) }}</div>
+      </div>
+      <div class="mw5 ph4">
+        {{ apos.singleton(data.page, 'whatUsersSayText3', 'apostrophe-rich-text', {}) }}
+        <div class="be-red remove-space">{{ apos.singleton(data.page, 'whatUsersSayAuthor3', 'apostrophe-rich-text', {}) }}</div>
+        <div class="be-red remove-space">{{ apos.singleton(data.page, 'whatUsersSayJob3', 'apostrophe-rich-text', {}) }}</div>
+      </div>
     </div>
   </section>
 
-  <section class="">
-    {{ apos.singleton(data.page, 'BEStatsHeader', 'apostrophe-rich-text', {}) }}
-    <div class="">
-      <img src="" alt="">
-      {{ apos.singleton(data.page, 'stat1img', 'apostrophe-images' ) }}
-      {{ apos.singleton(data.page, 'stat1header', 'apostrophe-rich-text', {}) }}
-      {{ apos.singleton(data.page, 'stat1text', 'apostrophe-rich-text', {}) }}
-    </div>
-    <div class="">
-      <img src="" alt="">
-      {{ apos.singleton(data.page, 'stat2img', 'apostrophe-images' ) }}
-      {{ apos.singleton(data.page, 'stat2header', 'apostrophe-rich-text', {}) }}
-      {{ apos.singleton(data.page, 'stat2text', 'apostrophe-rich-text', {}) }}
-    </div>
-    <div class="">
-      <img src="" alt="">
-      {{ apos.singleton(data.page, 'stat3img', 'apostrophe-images' ) }}
-      {{ apos.singleton(data.page, 'stat3header', 'apostrophe-rich-text', {}) }}
-      {{ apos.singleton(data.page, 'stat3text', 'apostrophe-rich-text', {}) }}
+  <section class="be-bg-grey">
+    <h3 class="fw1 f3 pt5 be-red w-80 center">{{ apos.singleton(data.page, 'BEStatsHeader', 'apostrophe-rich-text', {}) }}</h3>
+    <div class="flex justify-around flex-wrap w-90 w80-ns center">
+      <div class="be-bg-white h5 w5 br3 shadow-1 mb5 mh2">
+        {{ apos.singleton(data.page, 'stat1img', 'apostrophe-images' ) }}
+        <h3 class="tc fw1 f3 w-90 w-100-ns center be-red">{{ apos.singleton(data.page, 'stat1header', 'apostrophe-rich-text', {}) }}</h3>
+        <h1 class="tc f2 f1-ns fw1">{{ apos.singleton(data.page, 'stat1text', 'apostrophe-rich-text', {}) }}</h1>
+      </div>
+      <div class="be-bg-white h5 w5 br3 shadow-1 mb5 mh2">
+        {{ apos.singleton(data.page, 'stat2img', 'apostrophe-images' ) }}
+        <h3 class="tc fw1 f3 w-90 w-100-ns center be-red">{{ apos.singleton(data.page, 'stat2header', 'apostrophe-rich-text', {}) }}</h3>
+        <h1 class="tc f2 f1-ns fw1">{{ apos.singleton(data.page, 'stat2text', 'apostrophe-rich-text', {}) }}</h1>
+      </div>
+      <div class="be-bg-white h5 w5 br3 shadow-1 mb5 mh2">
+        {{ apos.singleton(data.page, 'stat3img', 'apostrophe-images' ) }}
+        <h3 class="tc fw1 f3 w-90 w-100-ns center be-red">{{ apos.singleton(data.page, 'stat3header', 'apostrophe-rich-text', {}) }}</h3>
+        <h1 class="tc f2 f1-ns fw1">{{ apos.singleton(data.page, 'stat3text', 'apostrophe-rich-text', {}) }}</h1>
+      </div>
     </div>
   </section>
 
   <section>
-    <h2> {{ apos.singleton(data.page, 'EBPracticeHeader', 'apostrophe-rich-text', {}) }} </h2>
-    <p>
-    {{ apos.singleton(data.page, 'EBPracticeText', 'apostrophe-rich-text', {}) }}
-    </p>
-    <a href="/how-to-use" class="no-underline quodl-blue">
-      <div class="dib br-pill tc w5 pv3 v-top ba-quodl-blue quodl-blue">
-        {{ apos.singleton(data.page, 'EBPracticeButton', 'apostrophe-rich-text', {}) }}
-      </div>
-    </a>
+    <div class="lh-copy w-90 w-70-ns center">
+      <h3 class="f2-5 pt5 pb2 w-90 w-100-ns be-red"> {{ apos.singleton(data.page, 'EBPracticeHeader', 'apostrophe-rich-text', {}) }} </h3>
+      <h3 class="fw3 f3 lh-copy"> {{ apos.singleton(data.page, 'EBPracticeText', 'apostrophe-rich-text', {}) }} </h3>
+      <a href="/how-to-use" class="no-underline quodl-blue">
+        <div class="be-button br-pill white be-bg-red mb5">
+          {{ apos.singleton(data.page, 'EBPracticeButton', 'apostrophe-rich-text', {}) }}
+        </div>
+      </a>
+    </div>
   </section>
 {% endblock %}
