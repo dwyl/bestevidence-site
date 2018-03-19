@@ -20,9 +20,9 @@
 function gtag() {
   dataLayer.push(arguments);
 }
-gtag("js", new Date());
+gtag('js', new Date());
 
-gtag("config", "UA-113135812-2");
+gtag('config', 'UA-113135812-2');
 </script>
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.0/css/tachyons.min.css"/>
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,300,600,700" rel="stylesheet">
@@ -80,10 +80,20 @@ gtag("config", "UA-113135812-2");
 {% endblock %}
 
 {% block afterMain %}
-  <section class="quodl-bg-dark-blue pv4 white">
-    <div class="w-80 center">
-      <a href="/contact" class="white f6">Contact Us</a>
-      <p>Copyright © 2018, Quodl All Rights Reserved</p>
+  <section class="be-bg-red pv4 be-white f6">
+    <div class="w-60 ml6 flex flex-row lh-lrg">
+      <div class="flex flex-column">
+      <p class="ttu ma0">Need Help?</p>
+        <a href="/contact" class="be-white">Contact Us</a>
+        <a href="/faqs" class="be-white">FAQs</a>
+      </div>
+      <div class="flex flex-column ml5">
+      <p class="ttu ma0">News</p>
+        <a href="/publications" class="be-white">Latest Publications</a>
+      </div>
+    </div>
+    <div class="w-80 ml6 mt4">
+     <p>Copyright © 2018, BestEvidence All Rights Reserved</p>
     </div>
   </section>
 {% endblock %}
