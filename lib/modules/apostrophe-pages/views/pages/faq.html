@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<section class="be-bg-grey pv5 center tc">
+  <h3 class="f2 f1-ns normal fw-1-ns w-90 w-80-ns be-red center">
+    {{ apos.singleton(data.page, 'faqHeader', 'apostrophe-rich-text') }}
+  </h3>
+  <div class="w-80 w-50-ns center f4 f3-ns">
+      {{ apos.singleton(data.page, 'faqSubheader', 'apostrophe-rich-text') }}
+  </div>
+
+  <section class="be-bg-white mt5 tl br3 shadow-2 w-90 w-80-ns pv3 ph4 ph5-ns center lh-copy">
+    <div class="w-80 center">
+    <h3 class="f3-ns fw6 center tc pa3">
+      {{ apos.singleton(data.page, 'faqTextHeader', 'apostrophe-rich-text') }}
+    </h3>
+    <h4 class="pv3">
+        {{ apos.singleton(data.page, 'faqQ1', 'apostrophe-rich-text') }}
+    </h4>
+    <p>
+      {{ apos.singleton(data.page, 'faqA1', 'apostrophe-rich-text') }}
+    </p>
+    <h4 class="pv3">
+        {{ apos.singleton(data.page, 'faqQ2', 'apostrophe-rich-text') }}
+    </h4>
+    <p>
+      {{ apos.singleton(data.page, 'faqA2', 'apostrophe-rich-text') }}
+    </p>
+    <h4 class="pv3">
+        {{ apos.singleton(data.page, 'faqQ3', 'apostrophe-rich-text') }}
+    </h4>
+    <p>
+      {{ apos.singleton(data.page, 'faqA3', 'apostrophe-rich-text') }}
+    </p>
+    <h4 class="pv3">
+        {{ apos.singleton(data.page, 'faqQ4', 'apostrophe-rich-text') }}
+    </h4>
+    <div class="pb3">
+      {{ apos.singleton(data.page, 'faqA4', 'apostrophe-rich-text') }}
+    </div>
+  </div>
+  </section>
+</section>
+{% endblock %}

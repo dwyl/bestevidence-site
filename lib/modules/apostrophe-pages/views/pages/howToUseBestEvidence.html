@@ -1,0 +1,204 @@
+{% extends "layout.html" %}
+{% block main %}
+
+<section class="be-bg-grey pv4">
+  <h3 class="f2 f1-ns normal fw-1-ns w-90 w-80-ns be-red center tc">
+    {{ apos.singleton(data.page, 'howToHeader', 'apostrophe-rich-text') }}
+  </h3>
+  <div class="w-80 w-50-ns center tc f4 f3-ns">
+      {{ apos.singleton(data.page, 'howToSubheader', 'apostrophe-rich-text') }}
+  </div>
+</section>
+
+<section class="be-bg-red be-white lh-title pv3">
+  <h3 class="f3 f2-ns b fw-1-ns w-90 w-80-ns center">
+    {{ apos.singleton(data.page, 'introHeader', 'apostrophe-rich-text') }}
+  </h3>
+  <div class="w-80 center f5 f4-ns tracked">
+      {{ apos.singleton(data.page, 'introText', 'apostrophe-rich-text') }}
+  </div>
+  <a href='../pdf/BE-User-Guide.pdf' download class="no-underline">
+    <div class="f4 f3-ns b fw-1-ns w-90 w-80-ns center be-white">
+      Download PDF
+    </div>
+  </a>
+</section>
+
+<section class="be-bg-grey pt4">
+  <div class="be-bg-white tl br3 shadow-2 w-90 w-80-ns pv3 mv5 ph4 ph5-ns center lh-copy">
+    <div class="be-red tc center f2">
+      {{ apos.singleton(data.page, 'basicSearchHeader', 'apostrophe-rich-text') }}
+    </div>
+    <div class="flex justify-row justify-around flex-wrap be-dark-red f4">
+      <div class="flex-column w4">
+        <div>
+          {{ apos.singleton(data.page, 'basicSearchImg1', 'apostrophe-images' ) }}
+        </div>
+        <div>
+          {{ apos.singleton(data.page, 'basicSearchText1', 'apostrophe-rich-text') }}
+        </div>
+      </div>
+      <div class="flex-column w4">
+        <div>
+          {{ apos.singleton(data.page, 'basicSearchImg2', 'apostrophe-images' ) }}
+        </div>
+        <div>
+          {{ apos.singleton(data.page, 'basicSearchText2', 'apostrophe-rich-text') }}
+        </div>
+      </div>
+      <div class="flex-column w4">
+        <div>
+          {{ apos.singleton(data.page, 'basicSearchImg3', 'apostrophe-images' ) }}
+        </div>
+        <div>
+          {{ apos.singleton(data.page, 'basicSearchText3', 'apostrophe-rich-text') }}
+        </div>
+      </div>
+      <div class="flex-column w4">
+        <div>
+          {{ apos.singleton(data.page, 'basicSearchImg4', 'apostrophe-images' ) }}
+        </div>
+          {{ apos.singleton(data.page, 'basicSearchText4', 'apostrophe-rich-text') }}
+      </div>
+      <div class="flex-column w4">
+        <div>
+          {{ apos.singleton(data.page, 'basicSearchImg5', 'apostrophe-images' ) }}
+        </div>
+          {{ apos.singleton(data.page, 'basicSearchText5', 'apostrophe-rich-text') }}
+      </div>
+    </div>
+  </div>
+
+
+  <div class="be-bg-white tl br3 shadow-2 w-90 w-80-ns mv5 pv3 ph4 ph5-ns center lh-copy">
+    <div class="be-red tc center f2">
+      {{ apos.singleton(data.page, 'addNoteHeader', 'apostrophe-rich-text') }}
+    </div>
+    <div class="flex justify-row justify-around flex-wrap be-dark-red f4">
+      <div class="flex-column w4">
+        <div>
+          {{ apos.singleton(data.page, 'addNoteImg1', 'apostrophe-images' ) }}
+        </div>
+        <div>
+          {{ apos.singleton(data.page, 'addNoteText1', 'apostrophe-rich-text') }}
+        </div>
+      </div>
+      <div class="flex-column w4">
+        <div>
+          {{ apos.singleton(data.page, 'addNoteImg2', 'apostrophe-images' ) }}
+        </div>
+        <div>
+          {{ apos.singleton(data.page, 'addNoteText2', 'apostrophe-rich-text') }}
+        </div>
+      </div>
+      <div class="flex-column w4">
+        <div>
+          {{ apos.singleton(data.page, 'addNoteImg3', 'apostrophe-images' ) }}
+        </div>
+        <div>
+          {{ apos.singleton(data.page, 'addNoteText3', 'apostrophe-rich-text') }}
+        </div>
+      </div>
+      <div class="flex-column w4">
+        <div>
+          {{ apos.singleton(data.page, 'addNoteImg4', 'apostrophe-images' ) }}
+        </div>
+          {{ apos.singleton(data.page, 'addNoteText4', 'apostrophe-rich-text') }}
+      </div>
+    </div>
+  </div>
+
+  <div class="be-bg-white tl br3 shadow-2 w-90 w-80-ns mv5 pv3 ph4 ph5-ns center lh-copy">
+    <div class="be-red tc center f2">
+      {{ apos.singleton(data.page, 'emailNoteHeader', 'apostrophe-rich-text') }}
+    </div>
+    <div class="flex justify-row justify-around flex-wrap be-dark-red f4">
+      <div class="flex-column w4">
+        <div>
+          {{ apos.singleton(data.page, 'emailNoteImg1', 'apostrophe-images' ) }}
+        </div>
+        <div>
+          {{ apos.singleton(data.page, 'emailNoteText1', 'apostrophe-rich-text') }}
+        </div>
+      </div>
+      <div class="flex-column w4">
+        <div>
+          {{ apos.singleton(data.page, 'emailNoteImg2', 'apostrophe-images' ) }}
+        </div>
+        <div>
+          {{ apos.singleton(data.page, 'emailNoteText2', 'apostrophe-rich-text') }}
+        </div>
+      </div>
+      <div class="flex-column w4">
+        <div>
+          {{ apos.singleton(data.page, 'emailNoteImg3', 'apostrophe-images' ) }}
+        </div>
+        <div>
+          {{ apos.singleton(data.page, 'emailNoteText3', 'apostrophe-rich-text') }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="be-bg-grey">
+    <div class="be-bg-white tl br3 shadow-2 w-90 w-80-ns mv5 pv3 ph4 ph5-ns center lh-copy">
+      <div class="be-red tc center f2">
+        {{ apos.singleton(data.page, 'advancedSearchHeader', 'apostrophe-rich-text') }}
+      </div>
+      <div class="flex justify-row justify-around flex-wrap be-dark-red f4">
+        <div class="flex-column w4">
+          <div>
+            {{ apos.singleton(data.page, 'advancedSearchImg1', 'apostrophe-images' ) }}
+          </div>
+          <div>
+            {{ apos.singleton(data.page, 'advancedSearchText1', 'apostrophe-rich-text') }}
+          </div>
+        </div>
+        <div class="flex-column w4">
+          <div>
+            {{ apos.singleton(data.page, 'advancedSearchImg2', 'apostrophe-images' ) }}
+          </div>
+          <div>
+            {{ apos.singleton(data.page, 'advancedSearchText2', 'apostrophe-rich-text') }}
+          </div>
+        </div>
+        <div class="flex-column w4">
+          <div>
+            {{ apos.singleton(data.page, 'advancedSearchImg3', 'apostrophe-images' ) }}
+          </div>
+          <div>
+            {{ apos.singleton(data.page, 'advancedSearchText3', 'apostrophe-rich-text') }}
+          </div>
+        </div>
+        <div class="flex-column w4">
+          <div>
+            {{ apos.singleton(data.page, 'advancedSearchImg4', 'apostrophe-images' ) }}
+          </div>
+            {{ apos.singleton(data.page, 'advancedSearchText4', 'apostrophe-rich-text') }}
+        </div>
+        <div class="flex-column w4">
+          <div>
+            {{ apos.singleton(data.page, 'advancedSearchImg5', 'apostrophe-images' ) }}
+          </div>
+            {{ apos.singleton(data.page, 'advancedSearchText5', 'apostrophe-rich-text') }}
+        </div>
+      </div>
+    </div>
+
+
+
+  <section class="pv5">
+    <h3 class="f3 be-red tc normal">
+      {{ apos.singleton(data.page, 'howToButtonHeader', 'apostrophe-rich-text') }}
+    </h3>
+
+    <div class="tc">
+      <a href="https://www.bestevidence.info/" class="no-underline white">
+        <div class="dib br-pill tc w5 pv3 v-top be-bg-red be-white mr3 mb3">
+          {{ apos.singleton(data.page, 'createAccountButton', 'apostrophe-rich-text', {}) }}
+        </div>
+      </a>
+    <div>
+  </section>
+</section>
+{% endblock %}
