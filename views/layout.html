@@ -20,9 +20,9 @@
 function gtag() {
   dataLayer.push(arguments);
 }
-gtag("js", new Date());
+gtag('js', new Date());
 
-gtag("config", "UA-113135812-2");
+gtag('config', 'UA-113135812-2');
 </script>
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.0/css/tachyons.min.css"/>
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,300,600,700" rel="stylesheet">
@@ -30,46 +30,33 @@ gtag("config", "UA-113135812-2");
 
 {% block beforeMain %}
   {#  Headers or Navigation  #}
-  <div class="absolute w-100 bg-white bg-transparent-ns z-1">
-    <nav class="w-site center w-80-ns tr">
-      <div class="center tc pt3 pl3">
-        <a href="{{ data.home._url }}" class="fl">
-          <!-- See https://github.com/cul-2016/site/issues/34 for reason this
-        if statement was used -->
-          {% if data.piece.tags == "" %}
-            <img src="../images/logo_na_dark.svg" alt="Quodl logo" class="w3-5">
-          {% else %}
-            <img src="../../images/logo_na_dark.svg" alt="Quodl logo" class="w3-5">
-          {% endif %}
-        </a>
-      </div>
-      <a href="{{ data.home._url }}" class="no-underline pt3 pl3 fw6 fl black dn dib-ns">Quodl</a>
-      <div class="dib dn-ns pr5">
-        <a href="https://www.quodl.co.uk" class="no-underline white">
-          <li class="dib ml4-ns fw6 ph3 pv2 br-pill bg-bright-orange">
-            Log in
-          </li>
-        </a>
-      </div>
+  <div class="absolute w-100 be-bg-white bg-transparent-ns z-1">
+    <div class="w-100-ns pv2 flex justify-around-ns items-center be-b--grey-o">
+      <a href="{{ data.home._url}}" class="fl">
+        {% if data.piece.tags == "" %}
+          <img src="../images/logo_be.png" alt="Best Evidence logo" class="w4">
+        {% else %}
+          <img src="../../images/logo_be.png" alt="Best Evidence logo" class="w4">
+        {% endif %}
+      </a>
+      <a href="{{ data.home._url }}" class="no-underline pt3 f1-ns f2-m f3 fl be-black dib-ns">Best Evidence</a>
+      <a href="https://www.bestevidence.info/" class="dn be-button flex-ns be-white tc be-bg-red no-underline f5 br-pill be-btn-s pv2 ph3">Sign up</a>
+    </div>
+
+    <nav class="pv3-ns">
       <input type="checkbox" id="burger" class="absolute top-2 right-1 dn">
       <label for="burger" class="dn-l pointer absolute top-1 right-1">
         <img src="../images/menu.svg" alt="burger menu" class="w2 dn-ns">
       </label>
-      <ul class="tr list w-100 w-75-ns dn dib-ns fr menu quodl-bg-blue-s mt2 pt2 mb0 pt0-ns ph0 shadow-2-s">
+      <ul class="list w-100 w-80-m w-50-ns tc flex-ns pl0 justify-around-ns navbar dn menu be-bg-white mt2-s pt2-s mb0-s pt0-ns ph0-s shadow-2-s">
         {% for nav_item in data.home._children %}
-          <li class="db dib-ns tc center pl4-ns fw6 pv3 pv0-ns">
-            <a href="{{ nav_item._url }}" class="no-underline white quodl-black-ns">
+          <li class="db dib-ns tc center pv3 f5 pv3-ns">
+            <a href="{{ nav_item._url }}" class="no-underline be-nav-grey">
               {{ nav_item.title }}
             </a>
           </li>
         {% endfor %}
-        <div class="center tc pv3 pv0-ns dn dib-ns">
-          <a href="https://www.quodl.co.uk" class="no-underline white">
-            <li class="dib ml4-ns fw6 ph3 pv2 br-pill bg-bright-orange">
-              Log in
-            </li>
-          </a>
-        </div>
+        <li class="db dib-ns tc center pv3 f5 pv3-ns"><a href="https://www.bestevidence.info/" class="no-underline be-nav-grey">Sign Up</a></li>
       </ul>
     </nav>
   </div>
@@ -80,10 +67,20 @@ gtag("config", "UA-113135812-2");
 {% endblock %}
 
 {% block afterMain %}
-  <section class="quodl-bg-dark-blue pv4 white">
-    <div class="w-80 center">
-      <a href="/contact" class="white f6">Contact Us</a>
-      <p>Copyright © 2018, Quodl All Rights Reserved</p>
+  <section class="be-bg-red pv4 be-white f6">
+    <div class="w-60 ml6 flex flex-row lh-lrg">
+      <div class="flex flex-column">
+      <p class="ttu ma0">Need Help?</p>
+        <a href="/contact" class="be-white">Contact Us</a>
+        <a href="/faqs" class="be-white">FAQs</a>
+      </div>
+      <div class="flex flex-column ml5">
+      <p class="ttu ma0">News</p>
+        <a href="/publications" class="be-white">Latest Publications</a>
+      </div>
+    </div>
+    <div class="w-80 ml6 mt4">
+     <p>Copyright © 2018, BestEvidence All Rights Reserved</p>
     </div>
   </section>
 {% endblock %}
