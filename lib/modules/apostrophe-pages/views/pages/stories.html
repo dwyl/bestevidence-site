@@ -2,12 +2,12 @@
 
 {% block main %}
 <section class="be-bg-grey pv5">
-  <h3 class="f2 f1-ns w-80 w-100-ns center">{{ apos.singleton(data.page, 'pageHeader', 'apostrophe-rich-text') }}</h3>
-  <div class="w-80 w-60-ns center lh-copy f4 f3-ns">
+  <h3 class="f2 f1-ns w-80 w-100-ns tc fw3 mb0 be-red">{{ apos.singleton(data.page, 'pageHeader', 'apostrophe-rich-text') }}</h3>
+  <div class="w-80 w-60-ns center lh-copy f4 f3-ns tc mb5">
       {{ apos.singleton(data.page, 'pageSubheader', 'apostrophe-rich-text') }}
   </div>
   <a href="https://www.bestevidence.info/" class="no-underline red">
-    <div class="br-pill tc">
+    <div class="be-button br-pill center white be-bg-red mb5">
       {{ apos.singleton(data.page, 'tellStoryButton', 'apostrophe-rich-text', {}) }}
     </div>
   </a>
@@ -22,7 +22,7 @@
       </div>
     </div>
     <h3 class="f2-5 w-90 w-100-ns be-red ma0"> {{ apos.singleton(data.page, 'storyHeader1', 'apostrophe-rich-text', {}) }} </h3>
-    <h3 class="fw3 f3 lh-copy ma0"> {{ apos.singleton(data.page, 'storySubHeader1', 'apostrophe-rich-text', {}) }} </h3>
+    <h3 class="fw3 f3 lh-copy ma0 be-red"> {{ apos.singleton(data.page, 'storySubHeader1', 'apostrophe-rich-text', {}) }} </h3>
     <div class="">{{ apos.singleton(data.page, 'storyText1', 'apostrophe-rich-text', {}) }}</div>
   </section>
 
@@ -36,7 +36,7 @@
       </div>
     </div>
     <h3 class="f2-5 w-90 w-100-ns be-red ma0"> {{ apos.singleton(data.page, 'storyHeader2', 'apostrophe-rich-text', {}) }} </h3>
-    <h3 class="fw3 f3 lh-copy ma0"> {{ apos.singleton(data.page, 'storySubHeader2', 'apostrophe-rich-text', {}) }} </h3>
+    <h3 class="fw3 f3 lh-copy ma0 be-red"> {{ apos.singleton(data.page, 'storySubHeader2', 'apostrophe-rich-text', {}) }} </h3>
     <div class="">{{ apos.singleton(data.page, 'storyText2', 'apostrophe-rich-text', {}) }}</div>
   </section>
 
@@ -50,9 +50,12 @@
       </div>
     </div>
     <h3 class="f2-5 w-90 w-100-ns be-red ma0"> {{ apos.singleton(data.page, 'storyHeader3', 'apostrophe-rich-text', {}) }} </h3>
-    <h3 class="fw3 f3 lh-copy ma0"> {{ apos.singleton(data.page, 'storySubHeader3', 'apostrophe-rich-text', {}) }} </h3>
+    <h3 class="fw3 f3 lh-copy ma0 be-red"> {{ apos.singleton(data.page, 'storySubHeader3', 'apostrophe-rich-text', {}) }} </h3>
     <div class="">{{ apos.singleton(data.page, 'storyText3', 'apostrophe-rich-text', {}) }}</div>
   </section>
+</section>
 
+<section class="be-bg-white w-90 w-80-ns center">
+  {{ apos.singleton(data.page, 'testingForm', 'stories-submit') }}
 </section>
 {% endblock %}
