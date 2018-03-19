@@ -20,8 +20,8 @@ var apos = require("apostrophe")({
     "apostrophe-attachments": {
       uploadfs: {
         backend: "s3",
-        secret: process.env.AWS_SECRET,
-        key: process.env.AWS_ID,
+        key: process.env.AWS_ACCESS_KEY_ID,
+        secret: process.env.AWS_SECRET_ACCESS_KEY,
         bucket: process.env.AWS_BUCKET,
         region: "eu-west-1"
       }
