@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<section class="be-bg-grey pv5 center tc w-90 w-80-ns">
+  <h3 class="f2 f1-ns normal fw3 w-90 w-80-ns be-red center">
+    {{ apos.singleton(data.page, 'pageHeader', 'apostrophe-rich-text') }}
+  </h3>
+
+  <div class="w-80 w-50-ns center f4 f3-ns normal pb4">
+      {{ apos.singleton(data.page, 'pageSubheader', 'apostrophe-rich-text') }}
+  </div>
+</section>
+
+<section class="bg-white lh-copy center tc">
+  <h3 class="f3 fw5 be-red fw5 w-60 center pv5"> {{ apos.singleton(data.page, 'aboutTextHeader', 'apostrophe-rich-text') }} </h3>
+
+  <div class="f3 fw3">
+    {{ apos.singleton(data.page, 'ensure1', 'apostrophe-rich-text', {}) }}
+    {{ apos.singleton(data.page, 'ensure2', 'apostrophe-rich-text', {}) }}
+    {{ apos.singleton(data.page, 'ensure3', 'apostrophe-rich-text', {}) }}
+    {{ apos.singleton(data.page, 'ensure4', 'apostrophe-rich-text', {}) }}
+  </div>
+
+  <a href="/how-to-use" class="no-underline red">
+    <h3 class="be-button br-pill center white be-bg-red mb5 fw1 mt5">
+      {{ apos.singleton(data.page, 'learnMoreButton', 'apostrophe-rich-text') }}
+    </h3>
+  </a>
+
+</section>
+{% endblock %}
