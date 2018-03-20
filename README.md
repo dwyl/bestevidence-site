@@ -21,8 +21,8 @@ cd site
 
    ```
    AWS_BUCKET
-   AWS_ID
-   AWS_SECRET
+   AWS_ACCESS_KEY_ID
+   AWS_SECRET_ACCESS_KEY
    MONGODB_URI
    ```
 
