@@ -1,28 +1,48 @@
-{% extends data.outerLayout %}
-{% block title %}{{ data.page.title }}{% endblock %}
+{% extends "layout.html" %}
 
 {% block main %}
-<h3></h3>
-  <form data-apos-search-page-form method="GET" action="{{ data.url | e }}#main">
-    {% if data.filters %}
-      <div class="ld-meta">{{ __('Filter Results By Type') }}</div>
-      <ul>
-        {% for filter in data.filters %}
-          <li>
-            <input data-apos-search-filter type="checkbox" name="{{ filter.name | e }}"
-              {% if filter.value %}checked{% endif %}
-              value="1"
-            />{{ filter.label | e }}
-          </li>
-        {% endfor %}
-      </ul>
-    {% endif %}
-    <div class="ld-meta">{{ __('New Search') }}</div>
-    <input type="search" data-apos-search-field value="{{ data.query.q | e }}" name="q" />
-    <input type="submit" value="Search" />
-  </form>
-  {% for doc in data.docs %}
-    <h4>{% if doc._url %}<a href="{{ doc._url }}">{% endif %}{{ doc.title }}{% if doc._url %}</a>{% endif %}</h4>
-    <p>{{ doc.searchSummary }}</p>
-  {% endfor %}
+<section class="be-bg-grey pb5 pt7">
+
+  <div class="w-90 w-80-ns center tc">
+    <h1 class="tc f1 fw4 be-red">
+      {{ apos.singleton(data.page, 'pageHeader', 'apostrophe-rich-text') }}
+    </h1>
+    <h2 class="tc fw3 ">
+      {{ apos.singleton(data.page, 'pageSubheader', 'apostrophe-rich-text') }}
+    </h2>
+  </div>
+
+  <section class="bw1 quodl-b--gray w-70 center">
+    <form class="tc" data-apos-search-page-form method="GET" action="{{ data.url | e }}#main">
+      {% if data.filters %}
+        <div class="ld-meta">{{ __('Filter Results By Type') }}</div>
+        <ul>
+          {% for filter in data.filters %}
+            <li>
+              <input data-apos-search-filter type="checkbox" name="{{ filter.name | e }}"
+                {% if filter.value %}checked{% endif %}
+                value="1"
+              />{{ filter.label | e }}
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      <input type="search" data-apos-search-field class="bn be-bg-white w-60 h3 br-pill pl4 shadow-2" value="{{ data.query.q | e }}" name="q" />
+      <input type="submit" value="Search" />
+    </form>
+ </section>
+
+ <section class="bg-white mt5 tl br3 shadow-2 w-90 pv3 ph3 ph5-ns center lh-copy">
+  {% if data.docs %}
+    {% for doc in data.docs %}
+      <span class="be-black f5 no-underline o-50 pb0">{{ doc.publishedAt | date('MMMM DD, YYYY' ) }}</span>
+      <h4>{% if doc._url %}<a class="no-underline be-black" href="{{ doc._url }}">{% endif %}{{ doc.title }}{% if doc._url %}</a>{% endif %}</h4>
+      <p>{{ doc.searchSummary }}</p>
+      <p class="f5 fw3 be-red"> {{ doc._author.title }} </p>
+    {% endfor %}
+  {% endif %}
+ </section>
+
+</section>
 {% endblock %}
