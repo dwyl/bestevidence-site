@@ -7,25 +7,20 @@
 {% import 'apostrophe-pager:macros.html' as pager %}
 
 {% block main %}
-<section class="bg-icons pv5">
+<section class="be-bg-grey pv5">
   <div class="w-90 w-80-ns center tc">
-    <h1 class="tc f2 quodl-blue">
+    <h1 class="tc f1 fw4 be-red">
       {{ apos.singleton(data.page, 'pageHeader', 'apostrophe-rich-text') }}
     </h1>
-    <h2 class="tc fw1 pb4">
+    <h2 class="tc fw3 ">
       {{ apos.singleton(data.page, 'pageSubheader', 'apostrophe-rich-text') }}
     </h2>
 
-  <section class="bb bw1 quodl-b--gray w-70 center">
-    <div class="w4 pa1 mh2 dib">
-      <a class="b black no-underline" href="/blog">All Articles</a>
-    </div>
-    <div class="w4 pa1 mh2 dib">
-      <a class="b black no-underline" href="/blog/lecturers">For Lecturers</a>
-    </div>
-    <div class="w4 pa1 mh2 dib">
-      <a class="b black no-underline" href="/blog/students">For Students</a>
-    </div>
+  <section class="bw1 quodl-b--gray w-70 center">
+    <form method="GET" action="/search">
+      <input class="bn be-bg-white w-60 h3 br-pill pl4 shadow-2" type="text" name="q" placeholder="Search Publications" />
+      <input type="submit" value="Search"/>
+    </form>
   </section>
 
   <section class="bg-white mt5 tl br3 shadow-2 w-90 pv3 ph3 ph5-ns center lh-copy">
