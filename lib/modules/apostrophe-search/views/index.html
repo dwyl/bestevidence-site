@@ -1,19 +1,19 @@
 {% extends "layout.html" %}
 
 {% block main %}
-<section class="be-bg-grey pb5 pt7">
+<section class="be-bg-grey pb5 pt7-ns pt6">
 
   <div class="w-90 w-80-ns center tc">
     <h1 class="tc f1 fw4 be-red">
       {{ apos.singleton(data.page, 'pageHeader', 'apostrophe-rich-text') }}
     </h1>
-    <h2 class="tc fw3 ">
+    <h2 class="tc fw3 w-80-ns center pb4">
       {{ apos.singleton(data.page, 'pageSubheader', 'apostrophe-rich-text') }}
     </h2>
   </div>
 
-  <section class="bw1 quodl-b--gray w-70 center">
-    <form class="tc" data-apos-search-page-form method="GET" action="{{ data.url | e }}#main">
+  <section class="bw1 be-b--gray w-70 center">
+    <form class="tc flex justify-center" data-apos-search-page-form method="GET" action="{{ data.url | e }}#main" >
       {% if data.filters %}
         <div class="ld-meta">{{ __('Filter Results By Type') }}</div>
         <ul>
@@ -28,18 +28,19 @@
         </ul>
       {% endif %}
 
-      <input type="search" data-apos-search-field class="bn be-bg-white w-60 h3 br-pill pl4 shadow-2" value="{{ data.query.q | e }}" name="q" />
-      <input type="submit" value="Search" />
+      <input type="search" data-apos-search-field class="bn be-bg-white w-60 h3 br-pill pl4 shadow-2" value="{{ data.query.q | e }}" name="q" placeholder="Search Publications" />
+      <input type="submit" value="" class="search ml1" alt="magnifying glass" />
     </form>
  </section>
 
- <section class="bg-white mt5 tl br3 shadow-2 w-90 pv3 ph3 ph5-ns center lh-copy">
+
+ <section class="bg-white mt5 tl br3 shadow-2 w-90 w-70-ns pv3 ph3 ph5-ns center lh-copy">
   {% if data.docs %}
     {% for doc in data.docs %}
       <span class="be-black f5 no-underline o-50 pb0">{{ doc.publishedAt | date('MMMM DD, YYYY' ) }}</span>
       <h4>{% if doc._url %}<a class="no-underline be-black" href="{{ doc._url }}">{% endif %}{{ doc.title }}{% if doc._url %}</a>{% endif %}</h4>
       <p>{{ doc.searchSummary }}</p>
-      <p class="f5 fw3 be-red"> {{ doc._author.title }} </p>
+      <p class="f5 fw3 be-red pb4"> {{ doc._author.title }} </p>
     {% endfor %}
   {% endif %}
  </section>

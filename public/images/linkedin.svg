@@ -8,13 +8,13 @@
     </defs>
     <g id="social" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-83.000000, -30.000000)">
         <g id="linkedin" transform="translate(83.000000, 30.000000)">
-            <circle id="Oval-4" fill="#2574A9" cx="17.5" cy="17.5" r="17.5"></circle>
+            <circle id="Oval-4" fill="#de1e2e" cx="17.5" cy="17.5" r="17.5"></circle>
             <g id="Icon/App/LinkedIn" transform="translate(6.000000, 6.000000)">
                 <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
                 <mask id="mask-2" fill="white">
                     <use xlink:href="#path-1"></use>
                 </mask>
-                <use id="Mask" fill="#0077B5" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <use id="Mask" fill="#de1e2e" fill-rule="evenodd" xlink:href="#path-1"></use>
                 <g id="Mixin/Fill/White" mask="url(#mask-2)" fill="#FFFFFF" fill-rule="evenodd">
                     <rect id="Box" x="0" y="0" width="24" height="24"></rect>
                 </g>

@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block main %}
-  <section class="pv6 be-bg-red">
+  <section class="img-banner pt7 pb6 be-bg-red">
     <h1 class="fw1 f2 f1-ns tc white w-site w-90 w-80-ns center">
       {{ apos.singleton(data.page, 'pageHeader', 'apostrophe-rich-text', {}) }}
     </h1>
@@ -32,21 +32,27 @@
 
     <div class="flex justify-around flex-wrap w-90 w-80-ns center">
       <div class="mw5">
+        <div class="w4 center">
         {{ apos.singleton(data.page, 'howToPic1', 'apostrophe-images' ) }}
+      </div>
         <h3 class="tc fw1 f3 w-90 w-100-ns center be-red">{{ apos.singleton(data.page, 'howToHeader1', 'apostrophe-rich-text', {}) }}</h3>
         <div class="f5">
           {{ apos.singleton(data.page, 'howToText1', 'apostrophe-rich-text', {}) }}
         </div>
       </div>
       <div class="mw5">
+        <div class="w4 center">
         {{ apos.singleton(data.page, 'howToPic2', 'apostrophe-images' ) }}
+      </div>
         <h3 class="tc fw1 f3 w-90 w-100-ns center be-red">{{ apos.singleton(data.page, 'howToHeader2', 'apostrophe-rich-text', {}) }}</h3>
         <div class="f5">
           {{ apos.singleton(data.page, 'howToText2', 'apostrophe-rich-text', {}) }}
         </div>
       </div>
       <div class="mw5">
+      <div class="w4 center">
         {{ apos.singleton(data.page, 'howToPic3', 'apostrophe-images' ) }}
+      </div>
         <h3 class="tc fw1 f3 w-90 w-100-ns center be-red">{{ apos.singleton(data.page, 'howToHeader3', 'apostrophe-rich-text', {}) }}</h3>
         <div class="f5">
           {{ apos.singleton(data.page, 'howToText3', 'apostrophe-rich-text', {}) }}
@@ -56,7 +62,7 @@
 
     <div class="w-90 w-80-ns center">
       <h3 class="tc fw1 f2-5 pt4 w-90 w-100-ns center be-red"> {{ apos.singleton(data.page, 'learnMoreText', 'apostrophe-rich-text', {}) }} </h3>
-      <a href="/how-to-use" class="no-underline quodl-blue">
+      <a href="/how-to-use-best-evidence" class="no-underline be-red">
         <div class="be-button br-pill center white be-bg-red mb5">
           {{ apos.singleton(data.page, 'howToUseBestEvidenceButton', 'apostrophe-rich-text', {}) }}
         </div>
@@ -111,7 +117,7 @@
     <div class="lh-copy w-90 w-70-ns center">
       <h3 class="f2-5 pt5 pb2 w-90 w-100-ns be-red"> {{ apos.singleton(data.page, 'EBPracticeHeader', 'apostrophe-rich-text', {}) }} </h3>
       <h3 class="fw3 f3 lh-copy"> {{ apos.singleton(data.page, 'EBPracticeText', 'apostrophe-rich-text', {}) }} </h3>
-      <a href="/how-to-use" class="no-underline quodl-blue">
+      <a href="/how-to-use-best-evidence" class="no-underline be-red">
         <div class="be-button br-pill white be-bg-red mb5">
           {{ apos.singleton(data.page, 'EBPracticeButton', 'apostrophe-rich-text', {}) }}
         </div>
