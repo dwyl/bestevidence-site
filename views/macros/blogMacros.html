@@ -14,11 +14,11 @@
 {% set image = apos.images.first(piece) or null %}
   <a href="{{ piece._url }}" class="no-underline">
     <li class="dib w-49-ns bg-white v-top ph2-ns pb4">
-      <span class="black no-underline o-50 b pb0">{{ piece.publishedAt | date('MMMM DD, YYYY' ) }}</span>
-      <h4 class="mv1"><a href="{{ piece._url }}" class="black no-underline f3">{{ piece.title | e }}</a></h4>
-      <p class="mv0">{{ apos.quodl.areaToPlainText(piece, 'main') | truncate(100) }}</p>
-      {% if piece.authorId %}
-      <h5>{{ piece._author.title }}</h5>
+      <span class="be-black f5 no-underline o-50 pb0">{{ piece.publishedAt | date('MMMM DD, YYYY' ) }}</span>
+      <h4 class="mv1"><a href="{{ piece._url }}" class="be-black no-underline f3">{{ piece.title | e }}</a></h4>
+      <p class="mv0 f5 be-black">{{ apos.quodl.areaToPlainText(piece, 'main') | truncate(100) }}</p>
+      {% if piece._author.title%}
+      <p class="mv0 f5 be-red fw3">{{ piece._author.title }}</p>
       {% endif %}
     </li>
   </a>

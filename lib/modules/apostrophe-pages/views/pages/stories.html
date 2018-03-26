@@ -1,18 +1,18 @@
 {% extends "layout.html" %}
 
 {% block main %}
-<section class="be-bg-grey pv5">
+<section class="be-bg-grey pb6 pt7">
   <h3 class="f2 f1-ns w-80 w-100-ns tc fw3 mb0 be-red">{{ apos.singleton(data.page, 'pageHeader', 'apostrophe-rich-text') }}</h3>
   <div class="w-80 w-60-ns center lh-copy f4 f3-ns tc mb5">
       {{ apos.singleton(data.page, 'pageSubheader', 'apostrophe-rich-text', {label: "header"}) }}
   </div>
-  <a href="https://www.bestevidence.info/" class="no-underline red">
-    <div class="be-button br-pill center white be-bg-red mb5">
+  <a href="#testimonial" class="no-underline red">
+    <div class="be-button br-pill center be-white be-bg-red mb3">
       {{ apos.singleton(data.page, 'tellStoryButton', 'apostrophe-rich-text', {}) }}
     </div>
   </a>
 
-  <section class="be-bg-white w-90 w-80-ns center pa5 mb5 br3 shadow-1">
+  <section class="be-bg-white w-90 w-80-ns center pa5 mb5 br3 shadow-1 overflow-auto">
     <div class="wrapperDiv">
       <div class="w6-ns fl pr4 pb3 pt3">
         <div class="">
@@ -29,7 +29,7 @@
       <p class="be-red fw6 f3 readMore">Read more</p>
   </section>
 
-  <section class="be-bg-white w-90 w-80-ns center pa5 mb5 br3 shadow-1">
+  <section class="be-bg-white w-90 w-80-ns center pa5 mb5 br3 shadow-1 overflow-auto">
     <div class="wrapperDiv">
       <div class="w6-ns fl pr4 pb3 pt3">
         <div class="">
@@ -46,7 +46,7 @@
     <p class="be-red fw6 f3 readMore">Read more</p>
   </section>
 
-  <section class="be-bg-white w-90 w-80-ns center pa5 mb5 br3 shadow-1">
+  <section class="be-bg-white w-90 w-80-ns center pa5 mb5 br3 shadow-1 overflow-auto">
     <div class="wrapperDiv">
       <div class="w6-ns fl pr4 pb3 pt3">
         <div class="">
@@ -64,7 +64,12 @@
   </section>
 </section>
 
-<section class="be-bg-white w-90 w-80-ns center">
+<section class="be-bg-white center shadow-1 pt5" id="testimonial">
+  <div class="w-80 center">
+  <h4 class="tc f4 f3-ns fw1">
+    {{ apos.singleton(data.page, 'testingFormHeader', 'apostrophe-rich-text', {}) }}
+  </h4>
   {{ apos.singleton(data.page, 'testingForm', 'stories-submit') }}
+</div>
 </section>
 {% endblock %}

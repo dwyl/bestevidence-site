@@ -40,7 +40,7 @@ gtag('config', 'UA-113135812-2');
         {% endif %}
       </a>
       <a href="{{ data.home._url }}" class="no-underline pt3 f1-ns f2-m f3 fl be-black dib-ns">Best Evidence</a>
-      <a href="https://www.bestevidence.info/" class="dn be-button flex-ns be-white tc be-bg-red no-underline f5 br-pill be-btn-s pv2 ph3">Sign up</a>
+      <a href="https://www.bestevidence.info/" class="dn be-button br-pill flex-ns be-white tc be-bg-red no-underline f5 be-btn-s pv2 ph3">Sign up</a>
     </div>
 
     <nav class="pv3-ns">
@@ -48,7 +48,7 @@ gtag('config', 'UA-113135812-2');
       <label for="burger" class="dn-l pointer absolute top-1 right-1">
         <img src="../images/menu.svg" alt="burger menu" class="w2 dn-ns">
       </label>
-      <ul class="list w-100 w-80-m w-50-ns tc flex-ns pl0 justify-around-ns navbar dn menu be-bg-white mt2-s pt2-s mb0-s pt0-ns ph0-s shadow-2-s">
+      <ul class="list w-100 w-90-m w-70-ns tc flex-ns pl0 justify-around-ns navbar dn menu be-bg-white mt2-s pt2-s mb0-s pt0-ns ph0-s shadow-2-s">
         {% for nav_item in data.home._children %}
           <li class="db dib-ns tc center pv3 f5 pv3-ns">
             <a href="{{ nav_item._url }}" class="no-underline be-nav-grey">
@@ -56,7 +56,7 @@ gtag('config', 'UA-113135812-2');
             </a>
           </li>
         {% endfor %}
-        <li class="db dib-ns tc center pv3 f5 pv3-ns"><a href="https://www.bestevidence.info/" class="no-underline be-nav-grey">Sign Up</a></li>
+        <li class="db tc center pv3 f5 pv3-ns dn-ns"><a href="https://www.bestevidence.info/" class="no-underline be-nav-grey">Sign Up</a></li>
       </ul>
     </nav>
   </div>
@@ -68,7 +68,7 @@ gtag('config', 'UA-113135812-2');
 
 {% block afterMain %}
   <section class="be-bg-red pv4 be-white f6">
-    <div class="w-60 ml6 flex flex-row lh-lrg">
+    <div class="w-60-ns ml6-ns ml2 flex flex-row lh-lrg">
       <div class="flex flex-column">
       <p class="ttu ma0">Need Help?</p>
         <a href="/contact" class="be-white">Contact Us</a>
@@ -79,7 +79,7 @@ gtag('config', 'UA-113135812-2');
         <a href="/publications" class="be-white">Latest Publications</a>
       </div>
     </div>
-    <div class="w-80 ml6 mt4">
+    <div class="w-80-ns ml6-ns ml2 mt4">
      <p>Copyright © 2018, BestEvidence All Rights Reserved</p>
     </div>
   </section>
