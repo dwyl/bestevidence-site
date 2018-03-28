@@ -1,13 +1,13 @@
 {% extends "layout.html" %}
 
 {% block main %}
-<section class="be-bg-grey pb6 pt7">
-  <h3 class="f2 f1-ns w-80 w-100-ns tc fw3 mb0 be-red">{{ apos.singleton(data.page, 'pageHeader', 'apostrophe-rich-text') }}</h3>
+<section class="be-bg-grey pb6 pt6-7 pt7-ns">
+  <h3 class="f2 f1-ns tc fw3 mb0 be-red">{{ apos.singleton(data.page, 'pageHeader', 'apostrophe-rich-text') }}</h3>
   <div class="w-80 w-60-ns center lh-copy f4 f3-ns tc mb5">
       {{ apos.singleton(data.page, 'pageSubheader', 'apostrophe-rich-text', {label: "header"}) }}
   </div>
   <a href="#testimonial" class="no-underline red">
-    <div class="be-button br-pill center be-white be-bg-red mb3">
+    <div class="be-button br-pill center be-white be-bg-red mb5">
       {{ apos.singleton(data.page, 'tellStoryButton', 'apostrophe-rich-text', {}) }}
     </div>
   </a>

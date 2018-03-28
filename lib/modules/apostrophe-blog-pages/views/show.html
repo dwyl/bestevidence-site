@@ -7,9 +7,9 @@
 {%- endblock -%}
 
 {% block main %}
-  <section class="tc center bg-icons pv5">
-    <h3 class="ph2 f2 f1-ns quodl-blue mb2">{{ data.piece.title }}</h3>
-    <div class="b o-50">{{ data.piece.publishedAt | date('MMMM D, YYYY') }}</div>
+  <section class="tc center be-bg-grey pb5 pt6-7 pt7-ns">
+    <h3 class="ph2 f2 f1-ns be-red mb2 fw3">{{ data.piece.title }}</h3>
+    <div class="b o-50 fw3 pt1">{{ data.piece.publishedAt | date('MMMM D, YYYY') }}</div>
 
     <section class="lh-copy bg-white mt5 tl br3 shadow-2 w-90 w-80-ns pv2 pv3-ns ph3 ph5-ns center ">
       {{ apos.area(data.piece, 'main', {
@@ -31,7 +31,7 @@
         }
       }) }}
 
-      <section class="bt bw1 quodl-b--gray pt4 tc center">
+      <section class="bt bw1 be-b--gray pt4 tc center">
         <h4 class="b o-50 fw3 mt0">
           SHARE THIS POST
         </h4>
@@ -44,12 +44,12 @@
           <img src="../../images/linkedin.svg" alt="LinkedIn">
         </a>
 
-        <a class="ph2 no-underline" href="http://twitter.com/share?text={{ data.piece.title }}&url=https://best-evidence-site.herokuapp.com/{{data.page.slug + '/' + data.piece.slug}}&hashtags=quodl" target="_blank">
+        <a class="ph2 no-underline" href="http://twitter.com/share?text={{ data.piece.title }}&url=https://best-evidence-site.herokuapp.com/{{data.page.slug + '/' + data.piece.slug}}&hashtags=best-evidence" target="_blank">
           <img src="../../images/twitter.svg" alt="Twitter">
         </a>
 
         {% if data.piece._author %}
-        <div class="bt bw1 quodl-b--gray mt4 pv4 tc tl-ns">
+        <div class="bt bw1 be-b--gray mt4 pv4 tc tl-ns">
           <h4 class="tl-ns normal">About the author</h4>
           <div class="w-70 w-10-ns dib v-top pr3-ns br-100 author-photo">
             {% if data.piece._author.thumbnail.items.length %}
