@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block main %}
-  <section class="img-banner pt7 pb6 be-bg-red">
+  <section class="img-banner pt6 pt7-ns pb6 be-bg-red">
     <h1 class="fw1 f2 f1-ns tc white w-site w-90 w-80-ns center">
       {{ apos.singleton(data.page, 'pageHeader', 'apostrophe-rich-text', {}) }}
     </h1>
@@ -96,18 +96,24 @@
     <h3 class="fw1 f3 pt5 be-red w-80 center">{{ apos.singleton(data.page, 'BEStatsHeader', 'apostrophe-rich-text', {}) }}</h3>
     <div class="flex justify-around flex-wrap w-90 w80-ns center">
       <div class="be-bg-white h5 w5 br3 shadow-1 mb5 mh2">
-        {{ apos.singleton(data.page, 'stat1img', 'apostrophe-images' ) }}
-        <h3 class="tc fw1 f3 w-90 w-100-ns center be-red">{{ apos.singleton(data.page, 'stat1header', 'apostrophe-rich-text', {}) }}</h3>
+        <div class="w4 center">
+          {{ apos.singleton(data.page, 'stat1img', 'apostrophe-images' ) }}
+        </div>
+        <h3 class="tc fw1 f3 w-90 w-100-ns center be-red mt0">{{ apos.singleton(data.page, 'stat1header', 'apostrophe-rich-text', {}) }}</h3>
         <h1 class="tc f2 f1-ns fw1">{{ apos.singleton(data.page, 'stat1text', 'apostrophe-rich-text', {}) }}</h1>
       </div>
       <div class="be-bg-white h5 w5 br3 shadow-1 mb5 mh2">
-        {{ apos.singleton(data.page, 'stat2img', 'apostrophe-images' ) }}
-        <h3 class="tc fw1 f3 w-90 w-100-ns center be-red">{{ apos.singleton(data.page, 'stat2header', 'apostrophe-rich-text', {}) }}</h3>
+        <div class="w4 center">
+          {{ apos.singleton(data.page, 'stat2img', 'apostrophe-images' ) }}
+        </div>
+        <h3 class="tc fw1 f3 w-90 w-100-ns center be-red mt0">{{ apos.singleton(data.page, 'stat2header', 'apostrophe-rich-text', {}) }}</h3>
         <h1 class="tc f2 f1-ns fw1">{{ apos.singleton(data.page, 'stat2text', 'apostrophe-rich-text', {}) }}</h1>
       </div>
       <div class="be-bg-white h5 w5 br3 shadow-1 mb5 mh2">
-        {{ apos.singleton(data.page, 'stat3img', 'apostrophe-images' ) }}
-        <h3 class="tc fw1 f3 w-90 w-100-ns center be-red">{{ apos.singleton(data.page, 'stat3header', 'apostrophe-rich-text', {}) }}</h3>
+        <div class="w4 center">
+          {{ apos.singleton(data.page, 'stat3img', 'apostrophe-images' ) }}
+        </div>
+        <h3 class="tc fw1 f3 w-90 w-100-ns center be-red mt0">{{ apos.singleton(data.page, 'stat3header', 'apostrophe-rich-text', {}) }}</h3>
         <h1 class="tc f2 f1-ns fw1">{{ apos.singleton(data.page, 'stat3text', 'apostrophe-rich-text', {}) }}</h1>
       </div>
     </div>
