@@ -16,7 +16,7 @@
     <li class="dib w-49-ns bg-white v-top ph2-ns pb4">
       <span class="be-black f5 no-underline o-50 pb0">{{ piece.publishedAt | date('MMMM DD, YYYY' ) }}</span>
       <h4 class="mv1"><a href="{{ piece._url }}" class="be-black no-underline f3">{{ piece.title | e }}</a></h4>
-      <p class="mv0 f5 be-black">{{ apos.best-evidence.areaToPlainText(piece, 'main') | truncate(100) }}</p>
+      <p class="mv0 f5 be-black">{{ apos.bestEvidence.areaToPlainText(piece, 'main') | truncate(100) }}</p>
       {% if piece._author.title%}
       <p class="mv0 f5 be-red fw3">{{ piece._author.title }}</p>
       {% endif %}
@@ -30,8 +30,7 @@
     <span class="o-50 b">{{ piece.publishedAt | date('MMMM D, YYYY') }}</span>
     <a href="{{ piece._url }}" class="no-underline">
       <h6 class="f4 be-black mv3 lh-copy">{{ piece.title }}</h6>
-      <p class="mv0 be-black word-break-all">{{ apos.best-evidence.areaToPlainText(piece, 'main') | truncate(100) }}</p>
-
+      <p class="mv0 be-black word-break-all">{{ apos.bestEvidence.areaToPlainText(piece, 'main') | truncate(100) }}</p>
       {% if piece.authorId %}
         <span class="">{{ piece._author.title }}</span>
       {% endif %}
