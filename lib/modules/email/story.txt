@@ -1,0 +1,6 @@
+
+Hi {{ toName }}
+A story has just been submitted by {{ clientName }} {{ clientEmail }}
+Story title: {{ title }}
+The following was written:
+{{ details }}
