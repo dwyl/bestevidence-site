@@ -24,6 +24,7 @@ cd site
    AWS_ACCESS_KEY_ID
    AWS_SECRET_ACCESS_KEY
    MONGODB_URI
+   TEMPLATE_DIRECTORY
    ```
 
    The project has got a local database that it can run with if you don't have the `.env` variable but you will have to start from scratch to fill it with content.
